@@ -30,7 +30,7 @@ export const GreetingsApiAxiosParamCreator = function (configuration?: Configura
     return {
         /**
          * 
-         * @summary Get a simple greeting
+         * @summary Get a simple greeting!
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -76,7 +76,7 @@ export const GreetingsApiFp = function(configuration?: Configuration) {
     return {
         /**
          * 
-         * @summary Get a simple greeting
+         * @summary Get a simple greeting!
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -96,7 +96,7 @@ export const GreetingsApiFactory = function (configuration?: Configuration, base
     return {
         /**
          * 
-         * @summary Get a simple greeting
+         * @summary Get a simple greeting!
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -115,7 +115,7 @@ export const GreetingsApiFactory = function (configuration?: Configuration, base
 export class GreetingsApiGenerated extends BaseAPI {
     /**
      * 
-     * @summary Get a simple greeting
+     * @summary Get a simple greeting!
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof GreetingsApiGenerated
