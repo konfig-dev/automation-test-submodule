@@ -1,9 +1,9 @@
 # automation-test-with-submodule-typescript-sdk
 
+SDKs (no submodules) to test automation workflows.
+
 [![npm](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/automation-test-with-submodule-typescript-sdk/v/1.0.0)
 [![GitHub last commit](https://img.shields.io/github/last-commit/eddiechayes/automation-test/tree/main/typescript.svg)](https://github.com/eddiechayes/automation-test/tree/main/typescript/commits)
-
-SDKs (no submodules) to test automation workflows.
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@ console.log(helloResponse);
 
 ### `automationtestwithsubmodule.greetings.hello`
 
-Get a simple greeting!
+Get a simple greeting!!
 
 #### 🛠️ Usage
 
