@@ -51,7 +51,7 @@ console.log(helloResponse);
 
 ### `automationtestwithsubmodule.greetings.hello`
 
-Get a simple greeting!!
+Get a simple greeting!!!
 
 #### 🛠️ Usage
 
@@ -60,13 +60,14 @@ const helloResponse = await automationtestwithsubmodule.greetings.hello();
 ```
 
 #### 🔄 Return
+
 [HelloResponse](./models/hello-response.ts)
 
 #### 🌐 Endpoint
 
 `/hello` `GET`
 
-[🔙 Back to Table of Contents](#table-of-contents)
+[🔙 **Back to Table of Contents**](#table-of-contents)
 
 ---
 
