@@ -48,12 +48,13 @@ export class AutomationTestWithSubmoduleError extends Error {
    */
   readonly method?: string;
 
-  constructor(axiosError: AxiosError, responseBody: unknown) {
-    super(axiosError.message);
+  constructor(axiosError: AxiosError, responseBody: unknown, headers: unknown) {
+    const message = axiosError.message + "\nRESPONSE HEADERS:\n" + JSON.stringify(headers, null, 2);
+    super(message);
     this.name = "AutomationTestWithSubmoduleError";
     this.code = axiosError.code;
-    this.method = axiosError.config.method?.toUpperCase();
-    this.url = axiosError.config.url;
+    this.method = axiosError.config?.method?.toUpperCase();
+    this.url = axiosError.config?.url;
     this.status = axiosError.response?.status;
     this.statusText = axiosError.response?.statusText;
     this.responseBody = responseBody;

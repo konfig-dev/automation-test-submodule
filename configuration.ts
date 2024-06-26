@@ -19,10 +19,13 @@ type ApiKey =
   | { [apiKeyName: string]: string | undefined };
 
 export interface ConfigurationParameters {
+    /**
+     * parameter for apiKey security
+     * @param name security name
+     * @memberof Configuration
+     */
     apiKey?: ApiKey;
-    username?: string;
-    password?: string;
-    accessToken?: string | Promise<string> | ((name?: string, scopes?: string[]) => string) | ((name?: string, scopes?: string[]) => Promise<string>);
+
     basePath?: string;
     baseOptions?: any;
     userAgent?: string;
@@ -58,6 +61,10 @@ export class Configuration {
      */
     accessToken?: string | Promise<string> | ((name?: string, scopes?: string[]) => string) | ((name?: string, scopes?: string[]) => Promise<string>);
     /**
+     * When the access token expires, measured in Unix time in seconds
+     */
+    accessTokenExpiresIn?: number;
+    /**
      * override base path
      *
      * @type {string}
@@ -85,13 +92,13 @@ export class Configuration {
     userAgent: string;
 
     constructor(param: ConfigurationParameters = {}) {
+
         this.apiKey = param.apiKey
+        
         if (this.apiKey === undefined) {
             this.apiKey = {}
         }
-        this.username = param.username;
-        this.password = param.password;
-        this.accessToken = param.accessToken;
+        
         this.basePath = param.basePath;
         this.baseOptions = param.baseOptions ?? {};
         this.userAgent = param.userAgent === undefined ? "Konfig/1.0.5/typescript" : param.userAgent;
