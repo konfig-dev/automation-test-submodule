@@ -2,7 +2,7 @@
 
 SDKs (no submodules) to test automation workflows.
 
-[![npm](https://img.shields.io/badge/npm-v1.0.6-blue)](https://www.npmjs.com/package/automation-test-with-submodule-typescript-sdk/v/1.0.6)
+[![npm](https://img.shields.io/badge/npm-v1.0.8-blue)](https://www.npmjs.com/package/automation-test-with-submodule-typescript-sdk/v/1.0.8)
 
 ## Table of Contents<a id="table-of-contents"></a>
 
