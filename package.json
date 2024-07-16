@@ -1,6 +1,6 @@
 {
   "name": "automation-test-with-submodule-typescript-sdk",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Client for Test Automation (No submodules)",
   "author": "Konfig",
   "engines": {
